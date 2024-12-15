@@ -1,0 +1,21 @@
+Kubernetes Interview Questions
+==========================================================================================================================================================================================================
+
+What is Kubernetes and what does it do?
+Kubernetes is an open-source container management tool that automates the deployment, scaling, and management of containers. 
+
+List the main components of Kubernetes architecture.
+Two main components of Kubernetes architecture are the Master node and the Worker node.
+1) Master node : The master node is the control plane making global decisions inside the cluster. The master node comprises the control plane components responsible for managing and coordinating the cluster. These components 
+                 are the API server, etcd, scheduler, cloud controller manager, and controller manager.
+2) Worker node : The worker node has four very light components, which makes sense because you want to reserve most of the space for your pods. These components are the proxy, the Kubelet, and the container runtime.
+==========================================================================================================================================================================================================
+
+You have an application deployed on Kubernetes that is experiencing increased traffic. How would you scale the application to handle the increased load?
+To scale the application, I would follow these step:
+1. Identify the bottleneck: Analyze resource utilization, including CPU, memory, and network, to determine the limiting factor.
+2. Horizontal scaling: If the bottleneck is CPU or memory, I would scale the application horizontally by increasing the number of replicas using a Horizontal Pod Autoscaler HPA.
+3. Vertical scaling: If the bottleneck is resource-specific, I would vertically scale the application by upgrading the resources allocated to each pod. 
+4. Monitor and validate: Monitor the applications performance after scaling to ensure the desired scalability is achieved without impacting stability.
+
+==========================================================================================================================================================================================================
