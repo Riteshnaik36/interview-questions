@@ -6,8 +6,13 @@ Kubernetes is an open-source container management tool that automates the deploy
 
 List the main components of Kubernetes architecture.
 Two main components of Kubernetes architecture are the Master node and the Worker node.
-1) Master node : The master node is the control plane making global decisions inside the cluster. The master node comprises the control plane components responsible for managing and coordinating the cluster. These components 
-                 are the API server, etcd, scheduler, cloud controller manager, and controller manager.
+1) Master node : The master node is the control plane making global decisions inside the cluster. The master node comprises the control plane components responsible for managing and coordinating the cluster. 
+These components are the 
+                    API server,   
+                    etcd, 
+                    scheduler, 
+                    cloud controller manager, 
+                    controller manager.
 2) Worker node : The worker node has four very light components, which makes sense because you want to reserve most of the space for your pods. These components are the proxy, the Kubelet, and the container runtime.
 ==========================================================================================================================================================================================================
 
