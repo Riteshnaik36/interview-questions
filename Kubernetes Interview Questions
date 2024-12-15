@@ -23,4 +23,6 @@ To scale the application, I would follow these step:
 3. Vertical scaling: If the bottleneck is resource-specific, I would vertically scale the application by upgrading the resources allocated to each pod. 
 4. Monitor and validate: Monitor the applications performance after scaling to ensure the desired scalability is achieved without impacting stability.
 
+
+
 ==========================================================================================================================================================================================================
